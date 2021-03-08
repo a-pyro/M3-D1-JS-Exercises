@@ -232,3 +232,8 @@ console.log(striveBuzz(34));
 
 // 20)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+const acronymator = (string) =>
+  string.split(' ').reduce((acc, cv) => acc + cv[0], '');
+
+console.log(acronymator('British Broadcasting Corporation'));
+console.log(acronymator('Word Wide Web'));
