@@ -191,6 +191,10 @@ const stringMagia = (string) =>
     ? string.toUpperCase()
     : string.slice(0, 3).toUpperCase() + string.slice(3);
 
+console.log(stringMagia('ciao'));
+console.log(stringMagia('cia'));
+console.log(stringMagia('sdjoigvhasot8vyncia'));
+
 // 18)
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 
