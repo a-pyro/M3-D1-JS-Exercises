@@ -94,19 +94,24 @@ const sumArr = (array) => array.reduce((acc, cv) => acc + cv);
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
-// const testArray = (array) => array.includes(1) || array.includes(3);
+
 const testArray = (array) => array.some((num) => num === 1 || num === 3);
 console.log(testArray([5, 8]));
 console.log(testArray([0, 3]));
 
 // 10)
 // Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
-const testArrayAgain = (array) => array.some((num) => num !== 1 || num !== 3);
-console.log(testArrayAgain([1, 3]));
+const testArrayAgain = (array) => !array.includes(1) && !array.includes(3);
+console.log(testArrayAgain([4, 5]));
 
 // 11)
 // Create a function to find the longest string from a given array of strings.
+const longestString = (strings) =>
+  strings.sort((a, b) => (a.length <= b.length ? -1 : 1))[strings.length - 1];
 
+console.log(longestString(['cia', 'ciao', 'ciaone']));
+console.log(longestString(['ciaonebellone', 'ciao', 'ciaone']));
+console.log(longestString(['cia', 'ciaotizio', 'ciaone']));
 // 12)
 // Create a function to find the types of a given angle.
 /* Types of angles:
