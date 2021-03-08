@@ -76,14 +76,19 @@ Create a function to display the city name if the string begins with "Los" or "N
 */
 const phantomCities = (cityName) =>
   cityName.toLowerCase().startsWith('los') ||
-  cityName.toLowerCase().startsWith('los')
+  cityName.toLowerCase().startsWith('new')
     ? cityName
     : '👻';
+
+console.log(phantomCities('chicago'));
+console.log(phantomCities('losangeles'));
+console.log(phantomCities('angelosles'));
+console.log(phantomCities('newyork'));
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
-
+const sumArr = (array) => array.reduce((acc, cv) => acc + cv);
 /*
 
 9)
