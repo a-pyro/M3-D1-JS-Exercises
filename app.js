@@ -60,12 +60,14 @@ const checkRange = (num1, num2) => {
   return 'out of ranges';
 };
 console.log(checkRange(49, 60));
+console.log(checkRange(78, 100));
+console.log(checkRange(78, 1001));
 /*
 6) 
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
-
+const repeatString = (string, n) => string.repeat(n);
 /*
 
 7)
