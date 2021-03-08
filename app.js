@@ -177,6 +177,12 @@ console.log(
 );
 // 16)
 // Create a function to check from two given integers, whether one is positive and another one is negative.
+const intChecker = (num1, num2) =>
+  (num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0);
+
+console.log(intChecker(-5, -5));
+console.log(intChecker(1, -5));
+console.log(intChecker(-1, 5));
 
 // 17)
 // Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
