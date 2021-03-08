@@ -186,6 +186,10 @@ console.log(intChecker(-1, 5));
 
 // 17)
 // Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
+const stringMagia = (string) =>
+  string.length < 3
+    ? string.toUpperCase()
+    : string.slice(0, 3).toUpperCase() + string.slice(3);
 
 // 18)
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
