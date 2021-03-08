@@ -169,7 +169,12 @@ const findIndexOfTheGreatest = (array) =>
 console.log(findIndexOfTheGreatest([0, 1, 2, 3, 40, 5, 6, 7, 8, 4, 10]));
 // 14)
 // Create a function to get the largest even number from an array of integers.
+const largestEvenNumber = (numbers) =>
+  Math.max(...numbers.filter((num) => num % 2 === 0));
 
+console.log(
+  largestEvenNumber([21344343434234, 4564, 756343, 577777777, 100000000000])
+);
 // 16)
 // Create a function to check from two given integers, whether one is positive and another one is negative.
 
