@@ -9,22 +9,40 @@ const shit = '💩',
 1)
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
-
+const sum = (num1, num2) => (num1 === num2 ? (num1 + num2) * 3 : num1 + num2);
+console.log(sum(2, 2));
+console.log(sum(2, 3));
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
+const checkNums = (num1, num2) =>
+  num1 === 50 || num2 === 50 || num1 + num2 === 50;
 
+console.log(checkNums(34, 50));
+console.log(checkNums(50, 24));
+console.log(checkNums(26, 24));
+console.log(checkNums(23, 24));
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
+const removeChar = (string, position) =>
+  string.replace(string.charAt(position), '');
 
+console.log(removeChar('ciao', 0));
+console.log(removeChar('ciao', 2));
+console.log(removeChar('ciaosonounastringalunga', 4));
 /*
 
 4)
  Create a function to find the largest of three given integers.
 */
+const largestInt = (num1, num2, num3) =>
+  [num1, num2, num3].reduce((acc, cv) => (cv >= acc ? (acc = cv) : acc), 0);
+console.log(largestInt(1, 3, 4));
+console.log(largestInt(6, 3, 4));
+console.log(largestInt(6, 177, 4));
 
 /*
 5)
