@@ -112,6 +112,14 @@ const longestString = (strings) =>
 console.log(longestString(['cia', 'ciao', 'ciaone']));
 console.log(longestString(['ciaonebellone', 'ciao', 'ciaone']));
 console.log(longestString(['cia', 'ciaotizio', 'ciaone']));
+console.log(
+  longestString([
+    'cia',
+    'ciaotizio',
+    'soono la stringa+ lunga di tutte 🚀',
+    'ciaone',
+  ])
+);
 // 12)
 // Create a function to find the types of a given angle.
 /* Types of angles:
@@ -120,6 +128,25 @@ console.log(longestString(['cia', 'ciaotizio', 'ciaone']));
     btuse angle: An angle between 90 and 180 degrees.
     Straight angle: A 180 degree angle. */
 
+const findTypeOfAngle = (angle) => {
+  switch (true) {
+    case angle >= 0 && angle < 90:
+      return 'Acute Angle';
+    case angle === 90:
+      return 'Right angle';
+    case angle > 90 && angle < 180:
+      return 'btuse angle';
+    case angle === 180:
+      return 'Stright Angle';
+    default:
+      return 'unknown angle 🤓';
+  }
+};
+console.log(findTypeOfAngle(56));
+console.log(findTypeOfAngle(90));
+console.log(findTypeOfAngle(178));
+console.log(findTypeOfAngle(180));
+console.log(findTypeOfAngle(12345));
 // 13)
 // Create a function to find the index of the greatest element of a given array of integers
 
