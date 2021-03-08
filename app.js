@@ -218,5 +218,17 @@ this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34". */
 
+const striveBuzz = (num) => {
+  let result = '';
+  if (num % 3 === 0) result += 'Diego';
+  if (num % 5 === 0) result += 'Riccardo';
+  if (num % 7 === 0) result += 'Stefano';
+
+  return result ? result : `${num}`;
+};
+console.log(striveBuzz(28));
+console.log(striveBuzz(30));
+console.log(striveBuzz(34));
+
 // 20)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
