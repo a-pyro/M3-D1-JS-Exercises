@@ -197,7 +197,12 @@ console.log(stringMagia('sdjoigvhasot8vyncia'));
 
 // 18)
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
-const 
+const crazySum = (num1, num2) =>
+  num1 + num2 >= 50 && num1 + num2 <= 80 ? 65 : 80;
+console.log(crazySum(45, 67));
+console.log(crazySum(45, 100));
+console.log(crazySum(25, 25));
+console.log(crazySum(54, 26));
 // 19)
 // Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
