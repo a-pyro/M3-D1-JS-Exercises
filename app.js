@@ -1,4 +1,4 @@
-console.log('Hi there! 🔥');
+// console.log('Hi there! 🔥');
 
 /*
 
@@ -6,8 +6,8 @@ console.log('Hi there! 🔥');
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
 const sum = (num1, num2) => (num1 === num2 ? (num1 + num2) * 3 : num1 + num2);
-console.log(sum(2, 2));
-console.log(sum(2, 3));
+// console.log(sum(2, 2));
+// console.log(sum(2, 3));
 /*
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
@@ -15,10 +15,10 @@ Create a function to check two given numbers and return true if one of the numbe
 const checkNums = (num1, num2) =>
   num1 === 50 || num2 === 50 || num1 + num2 === 50;
 
-console.log(checkNums(34, 50));
-console.log(checkNums(50, 24));
-console.log(checkNums(26, 24));
-console.log(checkNums(23, 24));
+// console.log(checkNums(34, 50));
+// console.log(checkNums(50, 24));
+// console.log(checkNums(26, 24));
+// console.log(checkNums(23, 24));
 /*
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
@@ -26,9 +26,9 @@ Create a function to remove a character at the specified position of a given str
 const removeChar = (string, position) =>
   string.replace(string.charAt(position), '');
 
-console.log(removeChar('ciao', 0));
-console.log(removeChar('ciao', 2));
-console.log(removeChar('ciaosonounastringalunga', 4));
+// console.log(removeChar('ciao', 0));
+// console.log(removeChar('ciao', 2));
+// console.log(removeChar('ciaosonounastringalunga', 4));
 /*
 
 4)
@@ -36,9 +36,9 @@ console.log(removeChar('ciaosonounastringalunga', 4));
 */
 const largestInt = (num1, num2, num3) =>
   [num1, num2, num3].reduce((acc, cv) => (cv >= acc ? (acc = cv) : acc), 0);
-console.log(largestInt(1, 3, 4));
-console.log(largestInt(6, 3, 4));
-console.log(largestInt(6, 177, 4));
+// console.log(largestInt(1, 3, 4));
+// console.log(largestInt(6, 3, 4));
+// console.log(largestInt(6, 177, 4));
 
 /*
 5)
@@ -55,16 +55,16 @@ const checkRange = (num1, num2) => {
   if (range2.includes(num1) && range2.includes(num2)) return 'range1[70,100]';
   return 'out of ranges';
 };
-console.log(checkRange(49, 60));
-console.log(checkRange(78, 100));
-console.log(checkRange(78, 1001));
+// console.log(checkRange(49, 60));
+// console.log(checkRange(78, 100));
+// console.log(checkRange(78, 1001));
 /*
 6) 
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
 const repeatString = (string, n) => string.repeat(n);
-console.log(repeatString('striveiscool', 8));
+// console.log(repeatString('striveiscool', 8));
 /*
 
 7)
@@ -76,10 +76,10 @@ const phantomCities = (cityName) =>
     ? cityName
     : '👻';
 
-console.log(phantomCities('chicago'));
-console.log(phantomCities('losangeles'));
-console.log(phantomCities('angelosles'));
-console.log(phantomCities('newyork'));
+// console.log(phantomCities('chicago'));
+// console.log(phantomCities('losangeles'));
+// console.log(phantomCities('angelosles'));
+// console.log(phantomCities('newyork'));
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
@@ -92,30 +92,30 @@ Create a function to test whether an array of integers of length 2 contains 1 or
 */
 
 const testArray = (array) => array.some((num) => num === 1 || num === 3);
-console.log(testArray([5, 8]));
-console.log(testArray([0, 3]));
+// console.log(testArray([5, 8]));
+// console.log(testArray([0, 3]));
 
 // 10)
 // Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
 const testArrayAgain = (array) => !array.includes(1) && !array.includes(3);
-console.log(testArrayAgain([4, 5]));
+// console.log(testArrayAgain([4, 5]));
 
 // 11)
 // Create a function to find the longest string from a given array of strings.
 const longestString = (strings) =>
   strings.sort((a, b) => (a.length <= b.length ? -1 : 1))[strings.length - 1];
 
-console.log(longestString(['cia', 'ciao', 'ciaone']));
-console.log(longestString(['ciaonebellone', 'ciao', 'ciaone']));
-console.log(longestString(['cia', 'ciaotizio', 'ciaone']));
-console.log(
+// console.log(longestString(['cia', 'ciao', 'ciaone']));
+// console.log(longestString(['ciaonebellone', 'ciao', 'ciaone']));
+// console.log(longestString(['cia', 'ciaotizio', 'ciaone']));
+/* console.log(
   longestString([
     'cia',
     'ciaotizio',
     'soono la stringa+ lunga di tutte 🚀',
     'ciaone',
   ])
-);
+); */
 // 12)
 // Create a function to find the types of a given angle.
 /* Types of angles:
@@ -138,11 +138,11 @@ const findTypeOfAngle = (angle) => {
       return 'unknown angle 🤓';
   }
 };
-console.log(findTypeOfAngle(56));
-console.log(findTypeOfAngle(90));
-console.log(findTypeOfAngle(178));
-console.log(findTypeOfAngle(180));
-console.log(findTypeOfAngle(12345));
+// console.log(findTypeOfAngle(56));
+// console.log(findTypeOfAngle(90));
+// console.log(findTypeOfAngle(178));
+// console.log(findTypeOfAngle(180));
+// console.log(findTypeOfAngle(12345));
 
 // 13)
 // Create a function to find the index of the greatest element of a given array of integers
@@ -162,23 +162,23 @@ const findIndexOfTheGreatest = (array) =>
     }
   );
 
-console.log(findIndexOfTheGreatest([0, 1, 2, 3, 40, 5, 6, 7, 8, 4, 10]));
+// console.log(findIndexOfTheGreatest([0, 1, 2, 3, 40, 5, 6, 7, 8, 4, 10]));
 // 14)
 // Create a function to get the largest even number from an array of integers.
 const largestEvenNumber = (numbers) =>
   Math.max(...numbers.filter((num) => num % 2 === 0));
 
-console.log(
+/* console.log(
   largestEvenNumber([21344343434234, 4564, 756343, 577777777, 100000000000])
-);
+); */
 // 16)
 // Create a function to check from two given integers, whether one is positive and another one is negative.
 const intChecker = (num1, num2) =>
   (num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0);
 
-console.log(intChecker(-5, -5));
-console.log(intChecker(1, -5));
-console.log(intChecker(-1, 5));
+// console.log(intChecker(-5, -5));
+// console.log(intChecker(1, -5));
+// console.log(intChecker(-1, 5));
 
 // 17)
 // Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
@@ -187,18 +187,19 @@ const stringMagia = (string) =>
     ? string.toUpperCase()
     : string.slice(0, 3).toUpperCase() + string.slice(3);
 
-console.log(stringMagia('ciao'));
-console.log(stringMagia('cia'));
-console.log(stringMagia('sdjoigvhasot8vyncia'));
+// console.log(stringMagia('ciao'));
+// console.log(stringMagia('cia'));
+// console.log(stringMagia('ci'));
+// console.log(stringMagia('sdjoigvhasot8vyncia'));
 
 // 18)
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 const crazySum = (num1, num2) =>
   num1 + num2 >= 50 && num1 + num2 <= 80 ? 65 : 80;
-console.log(crazySum(45, 67));
-console.log(crazySum(45, 100));
-console.log(crazySum(25, 25));
-console.log(crazySum(54, 26));
+// console.log(crazySum(45, 67));
+// console.log(crazySum(45, 100));
+// console.log(crazySum(25, 25));
+// console.log(crazySum(54, 26));
 // 19)
 // Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
@@ -214,22 +215,66 @@ this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
 this would be "34". */
 
-const striveBuzz = (num) => {
+/* const striveBuzz = (num) => {
   let result = '';
   if (num % 3 === 0) result += 'Diego';
   if (num % 5 === 0) result += 'Riccardo';
   if (num % 7 === 0) result += 'Stefano';
 
   return result ? result : `${num}`;
-};
-console.log(striveBuzz(28));
-console.log(striveBuzz(30));
-console.log(striveBuzz(34));
+}; */
+const striveBuzz = (num, strivers) =>
+  strivers.reduce(
+    (acc, cv) => (num % cv.modulo === 0 ? acc + cv.name : acc),
+    ''
+  ) || num;
 
+console.log(
+  striveBuzz(5, [
+    { name: 'diego', modulo: 3 },
+    { name: 'riccardo', modulo: 5 },
+    { name: 'stefano', modulo: 7 },
+  ])
+);
+console.log(
+  striveBuzz(30, [
+    { name: 'diego', modulo: 3 },
+    { name: 'riccardo', modulo: 5 },
+    { name: 'stefano', modulo: 7 },
+  ])
+);
+console.log(
+  striveBuzz(21, [
+    { name: 'diego', modulo: 3 },
+    { name: 'riccardo', modulo: 5 },
+    { name: 'stefano', modulo: 7 },
+  ])
+);
+console.log(
+  striveBuzz(70, [
+    { name: 'diego', modulo: 3 },
+    { name: 'riccardo', modulo: 5 },
+    { name: 'stefano', modulo: 7 },
+  ])
+);
+console.log(
+  striveBuzz(28, [
+    { name: 'diego', modulo: 3 },
+    { name: 'riccardo', modulo: 5 },
+    { name: 'stefano', modulo: 7 },
+  ])
+);
+console.log(
+  striveBuzz(34, [
+    { name: 'diego', modulo: 3 },
+    { name: 'riccardo', modulo: 5 },
+    { name: 'stefano', modulo: 7 },
+  ])
+);
 // 20)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 const acronymator = (string) =>
   string.split(' ').reduce((acc, cv) => acc + cv[0], '');
 
-console.log(acronymator('British Broadcasting Corporation'));
-console.log(acronymator('Word Wide Web'));
+// console.log(acronymator('British Broadcasting Corporation'));
+// console.log(acronymator('Word Wide Web'));
