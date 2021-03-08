@@ -147,9 +147,26 @@ console.log(findTypeOfAngle(90));
 console.log(findTypeOfAngle(178));
 console.log(findTypeOfAngle(180));
 console.log(findTypeOfAngle(12345));
+
 // 13)
 // Create a function to find the index of the greatest element of a given array of integers
+const findIndexOfTheGreatest = (array) =>
+  array.reduce(
+    (acc, cv, idx) => {
+      if (cv >= acc.num) {
+        acc.num = cv;
+        acc.idx = idx;
+      }
 
+      return acc;
+    },
+    {
+      num: 0,
+      idx: 0,
+    }
+  );
+
+console.log(findIndexOfTheGreatest([0, 1, 2, 3, 40, 5, 6, 7, 8, 4, 10]));
 // 14)
 // Create a function to get the largest even number from an array of integers.
 
