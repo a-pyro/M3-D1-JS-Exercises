@@ -48,7 +48,18 @@ console.log(largestInt(6, 177, 4));
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
-
+const checkRange = (num1, num2) => {
+  const range1 = [...Array(20)].map((_, idx) =>
+    idx === 19 ? idx + 41 : idx + 40
+  );
+  const range2 = [...Array(30)].map((_, idx) =>
+    idx === 29 ? idx + 71 : idx + 70
+  );
+  if (range1.includes(num1) && range1.includes(num2)) return 'range1[40,60]';
+  if (range2.includes(num1) && range2.includes(num2)) return 'range1[70,100]';
+  return 'out of ranges';
+};
+console.log(checkRange(49, 60));
 /*
 6) 
 
