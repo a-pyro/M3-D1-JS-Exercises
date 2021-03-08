@@ -94,6 +94,8 @@ const sumArr = (array) => array.reduce((acc, cv) => acc + cv);
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
+// const testArray = (array) => array.includes(1) || array.includes(3);
+const testArray = (array) => array.some((num) => num === 1 || num === 3);
 
 /*
 
