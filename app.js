@@ -96,52 +96,44 @@ Create a function to test whether an array of integers of length 2 contains 1 or
 */
 // const testArray = (array) => array.includes(1) || array.includes(3);
 const testArray = (array) => array.some((num) => num === 1 || num === 3);
+console.log(testArray([5, 8]));
+console.log(testArray([0, 3]));
 
-/*
+// 10)
+// Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+const testArrayAgain = (array) => array.some((num) => num !== 1 || num !== 3);
+console.log(testArrayAgain([1, 3]));
 
-10)
+// 11)
+// Create a function to find the longest string from a given array of strings.
 
-Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
-
-11)
-
-Create a function to find the longest string from a given array of strings.
-
-12)
-
-Create a function to find the types of a given angle.
-
-Types of angles:
+// 12)
+// Create a function to find the types of a given angle.
+/* Types of angles:
     Acute angle: An angle between 0 and 90 degrees.
     Right angle: An 90 degree angle.
     btuse angle: An angle between 90 and 180 degrees.
-    Straight angle: A 180 degree angle.
+    Straight angle: A 180 degree angle. */
 
-13)
+// 13)
+// Create a function to find the index of the greatest element of a given array of integers
 
-Create a function to find the index of the greatest element of a given array of integers
+// 14)
+// Create a function to get the largest even number from an array of integers.
 
-14)
+// 16)
+// Create a function to check from two given integers, whether one is positive and another one is negative.
 
-Create a function to get the largest even number from an array of integers.
+// 17)
+// Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case.
 
-16)
+// 18)
+// Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
 
-Create a function to check from two given integers, whether one is positive and another one is negative.
+// 19)
+// Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
-17)
-
-Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
-
-18)
-
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
-
-19)
-
-Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
-
-If the number has 3 as a factor, output 'Diego'.
+/* If the number has 3 as a factor, output 'Diego'.
 If the number has 5 as a factor, output 'Riccardo'.
 If the number has 7 as a factor, output 'Stefano'.
 If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
@@ -151,9 +143,7 @@ this would be a simple "Stefano".
 30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
 this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
-this would be "34".
+this would be "34". */
 
-20)
-Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
-
-*/
+// 20)
+// Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
