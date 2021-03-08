@@ -68,12 +68,17 @@ console.log(checkRange(78, 1001));
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
 const repeatString = (string, n) => string.repeat(n);
+console.log(repeatString('striveiscool', 8));
 /*
 
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
-
+const phantomCities = (cityName) =>
+  cityName.toLowerCase().startsWith('los') ||
+  cityName.toLowerCase().startsWith('los')
+    ? cityName
+    : '👻';
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
